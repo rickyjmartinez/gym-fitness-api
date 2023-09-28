@@ -12,6 +12,8 @@ Rails.application.routes.draw do
 
   #routines
   get "/routines" => "routines#index"
+  get "/routines/:id" => "routines#show"
   post "/routines" => "routines#create"
+
 
 end
