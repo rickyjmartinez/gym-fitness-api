@@ -20,4 +20,22 @@ class RoutinesController < ApplicationController
     render :show
   end 
 
+  def update
+    @routine = Routine.find_by(id:params[:id]) 
+
+    @routine.update(
+      exercise_id: params[:exercise_id] || @routine.exercise_id,
+      sets: params[:sets] || @routine.sets,
+      reps: params[:reps] || @routine.reps,
+    )
+    render :show
+  end
+
+  def destroy
+    @routine = Routine.find_by(id:params[:id]) 
+    @routine.destroy
+
+    render json: {message:"routine destroyed"}
+  end 
+
 end
