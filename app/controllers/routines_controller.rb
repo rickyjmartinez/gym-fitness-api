@@ -1,7 +1,7 @@
 class RoutinesController < ApplicationController
 
   def index
-   @routines = Routine.all
+   @routines = current_user.routines
    render :index
   end 
 
