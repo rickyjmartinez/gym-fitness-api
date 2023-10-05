@@ -30,5 +30,7 @@ Rails.application.routes.draw do
   patch "/exercises/:id" => "exercises#update"
   delete "/exercises/:id" => "exercises#destroy"
 
+  #additional exercises
+  get "/additions" => "additions#index"
 
 end
