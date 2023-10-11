@@ -5,9 +5,8 @@ Welcome to DontSkip, your go-to gym and fitness app for all things leg-focused e
 This README will guide you through setting up and running the backend of the application. For our frontend, please refer to the [dont-skip-frontend README](https://github.com/rickyjmartinez/dont-skip-frontend)
 
 ## Table of Contents 
-1.
-2.
-3.
+1. [Getting Started](#getting-started)
+2. [Configuration](#configuration) 
 
 ## Getting Started 
 
